@@ -1,13 +1,4 @@
-#Made for only trying out code and testing it
-
-if type(8) == int:
-    print("integer")
-
-if type(8) != int:
-    print("not integer")
-
-
-    #Creating the gdb and the garage features
+#Creating the gdb and the garage features
 import arcpy
 
 arcpy.env.workspace = r"C:\Users\enriquevalero\OneDrive - Texas A&M University\Documents\GEOG_676(ONLINE)\repo\valero-online-GEOG676-spring2025\Lab_4\codes_env"
@@ -43,4 +34,4 @@ arcpy.Intersect_analysis([garageBuffered, buildings], gdb_path + "\\Garage_Build
 
 arcpy.TableToTable_conversion(gdb_path + "\\Garage_Building_Intersection.dbf", r"C:\\Users\\enriquevalero\\OneDrive - Texas A&M University\\Documents\\GEOG_676(ONLINE)\\repo\\valero-online-GEOG676-spring2025\\Lab_4", "nearby_buildings.csv")
 
-print("Process completed") 
+print("Process completed")
